@@ -1,3 +1,6 @@
+<script>
+    import * as animateScroll from "svelte-scrollto";
+</script>
 <div class="relative items-center justify-center w-full h-full">
 
     <div class="container flex flex-col items-center justify-center h-full max-w-6xl pl-0 mx-auto -mt-24 sm:pl-8 xl:pl-0 md:flex-row md:justify-between">
@@ -16,7 +19,7 @@
                 </svg>
             </div>
             <p class="my-3 text-base text-center text-gray-600 xl:text-xl md:text-left">Leverage our powerful tools to take advantage of the state-of-the-art emotion detection technologies.</p>
-            <a href="#_" class="relative mt-5">
+            <a href="#form" on:click={() => animateScroll.scrollTo({element: '#form'})} class="relative mt-5">
                 <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-black rounded"></span>
                 <span class="relative inline-block w-full h-full px-8 py-3 text-base font-bold bg-white border-2 border-black rounded hover:bg-yellow-400 xl:text-xl fold-bold">Give it a try</span>
             </a>
