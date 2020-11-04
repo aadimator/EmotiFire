@@ -9,7 +9,6 @@
 
   async function submitFeedback() {
     feedback_submitted = true;
-    selected = true;
     const res = await fetch("http://127.0.0.1:8000/feedback", {
       method: "POST",
       body: JSON.stringify({
@@ -80,7 +79,9 @@
               </button>
             </div>
             {#if show_emotions}
-              <EmotionFeedback submitHandler={submitFeedback} />
+              <EmotionFeedback
+                submitHandler={submitFeedback}
+                bind:selected={sentiment} />
             {/if}
           </div>
         </div>
