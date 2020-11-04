@@ -6,11 +6,12 @@
   import Team from "./Team.svelte";
   import Footer from "./Footer.svelte";
   import Result from "./Result.svelte";
-
-
+  import Loader from "./Loader.svelte";
+  import Feedback from "./Feedback.svelte";
 
   let text = "This is a negative review. Hated the product.";
   let result = {};
+  let submited = false;
 </script>
 
 <style global lang="postcss">
@@ -25,10 +26,15 @@
 
 <Header />
 <Hero />
-<Form bind:text bind:result />
+<Form bind:text bind:result bind:submited />
 {#if result.sentiment}
-  <Result bind:result/>
+  <Result bind:result />
+  <Feedback bind:result />
+{:else if submited}
+  <Loader />
 {/if}
+
+<!-- <Feedback /> -->
 <FAQ />
 <Team />
 <Footer />

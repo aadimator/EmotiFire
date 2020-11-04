@@ -1,6 +1,7 @@
 <script>
   export let text;
   export let result;
+  export let submited;
 
   $: characters = text.length;
   $: words = text.split(" ").length;
@@ -8,6 +9,7 @@
   const submit = () => doPost();
 
   async function doPost() {
+    submited = true;
     const res = await fetch("http://127.0.0.1:8000/predict", {
       method: "POST",
       body: JSON.stringify({

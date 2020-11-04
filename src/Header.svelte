@@ -39,9 +39,7 @@
 <div class="relative z-20 w-full h-24 px-8 pt-2 bg-white">
   <div
     class="container flex items-center justify-between h-full max-w-6xl mx-auto">
-    <a
-      href="#_"
-      class="relative flex items-center inline-block h-5 h-full font-black">
+    <a href="#_" class="relative flex items-center  h-full font-black">
       <svg
         class="w-auto h-8 mt-1"
         viewBox="0 0 215 151"
@@ -74,25 +72,25 @@
 
     <div
       id="nav"
-      class="absolute top-0 left-0 hidden block w-full mt-20 border-b border-gray-200 sm:border-none sm:px-5 sm:block sm:relative sm:mt-0 sm:px-0 sm:w-auto">
+      class="absolute top-0 left-0 hidden  w-full mt-20 border-b border-gray-200 sm:border-none  sm:block sm:relative sm:mt-0 sm:px-0 sm:w-auto">
       <nav
         class="flex flex-col items-center py-3 bg-white border border-gray-100 sm:flex-row sm:bg-transparent sm:border-none sm:py-0">
         <a
-          href=""
-          class="relative px-1 mb-1 mb-5 mr-0 text-base font-bold sm:mb-0 sm:mr-4 lg:mr-8">Home<span
+          href="/"
+          class="relative px-1  mb-5 mr-0 text-base font-bold sm:mb-0 sm:mr-4 lg:mr-8">Home<span
             class="absolute bottom-0 left-0 w-full h-1 -mb-2 bg-yellow-300 rounded-full" /></a>
         <a
           href="#faq"
-          on:click={() => animateScroll.scrollTo({element: '#faq'})}
-          class="px-1 mb-1 mb-5 mr-0 text-base font-bold sm:mb-0 sm:mr-4 lg:mr-8">FAQ</a>
+          on:click={() => animateScroll.scrollTo({ element: '#faq' })}
+          class="px-1  mb-5 mr-0 text-base font-bold sm:mb-0 sm:mr-4 lg:mr-8">FAQ</a>
         <a
           href="#team"
-          on:click={() => animateScroll.scrollTo({element: '#team'})}
-          class="px-1 mb-1 mb-5 mr-0 text-base font-bold sm:mb-0 sm:mr-4 lg:mr-8">Team</a>
+          on:click={() => animateScroll.scrollTo({ element: '#team' })}
+          class="px-1  mb-5 mr-0 text-base font-bold sm:mb-0 sm:mr-4 lg:mr-8">Team</a>
         <a
           href="#about"
-          on:click={() => animateScroll.scrollTo({element: '#about'})}
-          class="px-1 mb-1 mb-5 mr-0 text-base font-bold sm:mb-0 sm:mr-4 lg:mr-8">About</a>
+          on:click={() => animateScroll.scrollTo({ element: '#about' })}
+          class="px-1 mb-5 mr-0 text-base font-bold sm:mb-0 sm:mr-4 lg:mr-8">About</a>
         <!-- <a href="#_" class="relative mb-5 sm:mb-0">
                     <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-black rounded"></span>
                     <span class="relative inline-block w-full h-full px-3 py-1 text-base font-bold transition duration-100 bg-white border-2 border-black rounded fold-bold hover:bg-yellow-400 hover:text-gray-900">SIGNUP</span>
