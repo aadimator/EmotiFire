@@ -8,7 +8,7 @@
     happy: "😀",
     angry: "😠",
     "positively surprised": "🤩",
-    sad: "😥",
+    sad: "😞",
     "negatively surprised": "🙀",
   };
 
@@ -20,6 +20,15 @@
     sad: "Sad",
     "negatively surprised": "Negatively Surprised",
   };
+
+  const emoLabels = [
+    { icon: "😐", label: "Neutral" },
+    { icon: "😀", label: "Happy" },
+    { icon: "😠", label: "Angry" },
+    { icon: "🤩", label: "Positively Surprised" },
+    { icon: "😞", label: "Sad" },
+    { icon: "🙀", label: "Negatively Surprised" },
+  ];
 </script>
 
 <div class="relative w-full px-8 py-4 bg-yellow-400 sm:py-22 md:py-20">
@@ -41,6 +50,17 @@
           </div>
           <!-- {JSON.stringify(result)} -->
           <BarChart bind:probs={result.probabilities} />
+
+          <div
+            class="flex flex-wrap items-start content-around justify-center font-semibold mt-8 mb-4">
+            {#each emoLabels as emo}
+              <span
+                class="flex items-center px-2 mb-2 mr-2 text-gray-900 bg-gray-300 border border-gray-500 rounded-xl">
+                {emo.icon}
+                {emo.label}
+              </span>
+            {/each}
+          </div>
         </div>
       </div>
     </div>

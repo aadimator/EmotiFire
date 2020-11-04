@@ -2,17 +2,6 @@
   export let selected;
 
   export let submitHandler = () => {};
-
-  const emotionLabels = {
-    neutral: "Neutral",
-    happy: "Happy",
-    angry: "Angry",
-    "positively surprised": "Positively Surprised",
-    sad: "Sad",
-    "negatively surprised": "Negatively Surprised",
-  };
-
-  
 </script>
 
 <div class="mt-2 text-center">

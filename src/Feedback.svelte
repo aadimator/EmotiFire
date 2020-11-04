@@ -7,24 +7,6 @@
   let feedback_submitted = false;
   let show_emotions = false;
 
-  const emoticons = {
-    neutral: "😐",
-    happy: "😀",
-    angry: "😠",
-    "positively surprised": "🤩",
-    sad: "😥",
-    "negatively surprised": "🙀",
-  };
-
-  const emotionLabels = {
-    neutral: "Neutral",
-    happy: "Happy",
-    angry: "Angry",
-    "positively surprised": "Positively Surprised",
-    sad: "Sad",
-    "negatively surprised": "Negatively Surprised",
-  };
-
   async function submitFeedback() {
     feedback_submitted = true;
     selected = true;
