@@ -90,7 +90,7 @@
         <div class="px-6">
           <img
             alt="..."
-            src="https://static.wixstatic.com/media/a4f5c6_3dbb6c630f3647aaa30de81393aae0ec~mv2.jpg/v1/fill/w_133,h_130,al_c,q_80,usm_0.66_1.00_0.01/ZahidHalim.webp"
+            src="https://www.giki.edu.pk/images/facultymembers/zahidhalim"
             class="shadow-lg rounded-full max-w-full mx-auto" />
           <div class="pt-6 text-center">
             <h5 class="text-lg font-bold">Dr. Zahid Halim</h5>

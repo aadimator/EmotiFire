@@ -10,7 +10,7 @@
 
   async function doPost() {
     submited = true;
-    const res = await fetch("http://127.0.0.1:8000/predict", {
+    const res = await fetch("http://34.122.67.36:8000/predict", {
       method: "POST",
       body: JSON.stringify({
         text,

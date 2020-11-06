@@ -9,7 +9,7 @@
 
   async function submitFeedback() {
     feedback_submitted = true;
-    const res = await fetch("http://127.0.0.1:8000/feedback", {
+    const res = await fetch("http://34.122.67.36:8000/feedback", {
       method: "POST",
       body: JSON.stringify({
         textId: result.firebaseId,
