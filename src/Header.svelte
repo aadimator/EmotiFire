@@ -41,33 +41,54 @@
     class="container flex items-center justify-between h-full max-w-6xl mx-auto">
     <a href="#_" class="relative flex items-center  h-full font-black">
       <svg
-        class="w-auto h-8 mt-1"
-        viewBox="0 0 215 151"
+        id="emoji"
+        viewBox="0 0 72 72"
         xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
-          <linearGradient
-            x1="56.965%"
-            y1="53.262%"
-            x2="7.891%"
-            y2="29.24%"
-            id="b">
-            <stop stop-color="#FFCD26" offset="0%" />
-            <stop stop-color="#FFDF95" offset="100%" />
-          </linearGradient>
+        class="w-auto h-10 mt-1">
+        <g id="color">
+          <circle cx="36" cy="36" r="23" fill="#FCEA2B" />
           <path
-            d="M95.655.001c-24.386 0-43.538 13.864-52.36 34.66-5.144 12.126-3.711 24.522.084 29.027 2.435-5.804 11.57-15.424 29.476-15.424h79.952c29.783 0 54.375-30.377 61.963-48.263H95.655zM67.693 65.916C23.419 65.916.085 105.344 0 137.666v.345c.011 4.322.439 8.517 1.291 12.466 2.433-5.804 19.956-36.297 47.062-36.297h23.225c29.783 0 54.375-30.378 61.963-48.264H67.693z"
-            id="a" />
-        </defs>
-        <g fill="none" fill-rule="evenodd">
-          <mask id="c" fill="#fff">
-            <use xlink:href="#a" />
-          </mask>
+            fill="#FFFFFF"
+            d="M50.595,41.64c0.012,1.5397-0.2838,3.0662-0.87,4.49c-12.49,3.03-25.43,0.34-27.49-0.13 c-0.5588-1.3852-0.8407-2.8664-0.83-4.36h0.11c0,0,14.8,3.59,28.89,0.07L50.595,41.64z" />
           <path
-            d="M95.655.001c-24.386 0-43.538 13.864-52.36 34.66-5.144 12.126-3.711 24.522.084 29.027 2.435-5.804 11.57-15.424 29.476-15.424h79.952c29.783 0 54.375-30.377 61.963-48.263H95.655zM67.693 65.916C23.419 65.916.085 105.344 0 137.666v.345c.011 4.322.439 8.517 1.291 12.466 2.433-5.804 19.956-36.297 47.062-36.297h23.225c29.783 0 54.375-30.378 61.963-48.264H67.693z"
-            fill="url(#b)"
-            mask="url(#c)" />
-        </g></svg>
-      <span class="ml-3 text-2xl font-black">Flare</span>
+            fill="#EA5A47"
+            d="M49.7251,46.13c-1.79,4.27-6.35,7.23-13.69,7.23c-7.41,0-12.03-3.03-13.8-7.36 C24.2951,46.47,37.235,49.16,49.7251,46.13z" />
+        </g>
+        <g id="hair" />
+        <g id="skin" />
+        <g id="skin-shadow" />
+        <g id="line">
+          <circle
+            cx="36"
+            cy="36"
+            r="23"
+            fill="none"
+            stroke="#000000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2" />
+          <path
+            fill="none"
+            stroke="#000000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M50.595,41.64 c0.012,1.5397-0.2838,3.0662-0.87,4.49c-12.49,3.03-25.43,0.34-27.49-0.13c-0.5588-1.3852-0.8407-2.8664-0.83-4.36h0.11 c0,0,14.8,3.59,28.89,0.07L50.595,41.64z" />
+          <path
+            fill="none"
+            stroke="#000000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M49.7251,46.13 c-1.79,4.27-6.35,7.23-13.69,7.23c-7.41,0-12.03-3.03-13.8-7.36C24.2951,46.47,37.235,49.16,49.7251,46.13z" />
+          <path
+            d="M30,31c0,1.6568-1.3448,3-3,3c-1.6553,0-3-1.3433-3-3c0-1.6552,1.3447-3,3-3C28.6552,28,30,29.3448,30,31" />
+          <path
+            d="M48,31c0,1.6568-1.3447,3-3,3s-3-1.3433-3-3c0-1.6552,1.3447-3,3-3S48,29.3448,48,31" />
+        </g>
+      </svg>
+
+      <span class="ml-3 text-2xl font-black">EmotiFire</span>
     </a>
 
     <div
@@ -91,10 +112,6 @@
           href="#about"
           on:click={() => animateScroll.scrollTo({ element: '#about' })}
           class="px-1 mb-5 mr-0 text-base font-bold sm:mb-0 sm:mr-4 lg:mr-8">About</a>
-        <!-- <a href="#_" class="relative mb-5 sm:mb-0">
-                    <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-black rounded"></span>
-                    <span class="relative inline-block w-full h-full px-3 py-1 text-base font-bold transition duration-100 bg-white border-2 border-black rounded fold-bold hover:bg-yellow-400 hover:text-gray-900">SIGNUP</span>
-                </a> -->
       </nav>
     </div>
 

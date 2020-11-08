@@ -91,6 +91,7 @@
           <img
             alt="..."
             src="https://www.giki.edu.pk/images/facultymembers/zahidhalim"
+            width="350px"
             class="shadow-lg rounded-full max-w-full mx-auto" />
           <div class="pt-6 text-center">
             <h5 class="text-lg font-bold">Dr. Zahid Halim</h5>
@@ -132,6 +133,7 @@
           <img
             alt="..."
             src="https://secure.gravatar.com/avatar/56a48c293350eb0cd0c587db483d88dd?size=400"
+            width="350px"
             class="shadow-lg rounded-full max-w-full mx-auto" />
           <div class="pt-6 text-center">
             <h5 class="text-lg font-bold">Aadam</h5>

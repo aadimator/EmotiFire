@@ -1,5 +1,5 @@
 <footer class="px-4 pt-12 pb-8 text-white bg-black">
-    <div class="container flex flex-col justify-between max-w-6xl px-4 mx-auto overflow-hidden lg:flex-row">
+    <!-- <div class="container flex flex-col justify-between max-w-6xl px-4 mx-auto overflow-hidden lg:flex-row">
 
             <a href="#_" class="block w-1/3 mr-4">
                 <span class="flex items-center">
@@ -45,6 +45,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="pt-4 pt-6 mt-10 text-center text-gray-600 border-t border-gray-800"> ©2020 Flare. All rights reserved.</div>
+    </div> -->
+    <div class="pt-6 mt-10 text-center text-gray-600 border-t border-gray-800"> ©2020 EmotiFire. All rights reserved.</div>
 </footer>

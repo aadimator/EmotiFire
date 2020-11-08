@@ -1,14 +1,18 @@
 <script>
+  import * as animateScroll from "svelte-scrollto";
+
   export let text;
-  export let result;
   export let submited;
+  export let predictPromise;
 
   $: characters = text.length;
   $: words = text.split(" ").length;
 
-  const submit = () => doPost();
+  const submit = () => {predictPromise = doPost()};
 
   async function doPost() {
+    animateScroll.scrollTo({ element: '#result', offset: -200})
+
     submited = true;
     const res = await fetch("http://34.122.67.36:8000/predict", {
       method: "POST",
@@ -17,8 +21,11 @@
       }),
     });
 
-    const json = await res.json();
-    result = json;
+    if (res.status === 200) {
+      return await res.json();
+    } else {
+      throw new Error(res.statusText);
+    }
   }
 </script>
 
