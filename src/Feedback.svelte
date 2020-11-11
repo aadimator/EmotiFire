@@ -9,7 +9,7 @@
 
   async function submitFeedback() {
     feedback_submitted = true;
-    const res = await fetch("http://34.122.67.36:8000/feedback", {
+    const res = await fetch("https://backend.emotifire.com/feedback", {
       method: "POST",
       body: JSON.stringify({
         textId: result.firebaseId,

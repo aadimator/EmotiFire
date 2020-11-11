@@ -14,7 +14,7 @@
     animateScroll.scrollTo({ element: '#result', offset: -200})
 
     submited = true;
-    const res = await fetch("http://34.122.67.36:8000/predict", {
+    const res = await fetch("https://backend.emotifire.com/predict", {
       method: "POST",
       body: JSON.stringify({
         text,
