@@ -12,7 +12,7 @@
 
   import { fade, fly } from "svelte/transition";
 
-  let text = "This is a negative review. Hated the product.";
+  let text = "";
   let result = {};
   let submited = false;
   let predictPromise;
