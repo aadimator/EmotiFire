@@ -104,10 +104,10 @@
           href="#faq"
           on:click={() => animateScroll.scrollTo({ element: '#faq' })}
           class="px-1  mb-5 mr-0 text-base font-bold sm:mb-0 sm:mr-4 lg:mr-8">FAQ</a>
-        <a
+        <!-- <a
           href="#team"
           on:click={() => animateScroll.scrollTo({ element: '#team' })}
-          class="px-1  mb-5 mr-0 text-base font-bold sm:mb-0 sm:mr-4 lg:mr-8">Team</a>
+          class="px-1  mb-5 mr-0 text-base font-bold sm:mb-0 sm:mr-4 lg:mr-8">Team</a> -->
         <a
           href="#about"
           on:click={() => animateScroll.scrollTo({ element: '#about' })}

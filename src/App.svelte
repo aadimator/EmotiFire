@@ -4,6 +4,7 @@
   import Form from "./Form.svelte";
   import FAQ from "./FAQ.svelte";
   import Team from "./Team.svelte";
+  import About from "./About.svelte";
   import Footer from "./Footer.svelte";
   import Result from "./Result.svelte";
   import Loader from "./Loader.svelte";
@@ -74,5 +75,6 @@
 
 <!-- <Feedback /> -->
 <FAQ />
-<Team />
+<!-- <Team /> -->
+<About />
 <Footer />
